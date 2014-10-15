@@ -1,10 +1,13 @@
 package com.mvc4forlogin.zhang;
 
 import javax.validation.constraints.Size;
+
 import org.hibernate.validator.constraints.NotEmpty;
-public class LoginForm {
+import org.springframework.validation.Errors;
+public class LoginForm{
 	@NotEmpty
 	@Size(min = 1, max = 50)
+	
 	private String userName;
 	@NotEmpty
 	@Size(min = 1, max = 20)
